@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import {Chatroom} from '../components/Chatroom'
+import {JoinChatroom} from "../components/JoinChatroom";
 
 
 const Home: NextPage = () => {
@@ -14,7 +15,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico"/>
       </Head>
       <main className={styles.main}>
-        <Chatroom messages={[{user: "boi", text: "what"}]}/>
+        <JoinChatroom/>
+        <Chatroom room={"1"} user={"big man"}/>
       </main>
 
       <footer className={styles.footer}>
